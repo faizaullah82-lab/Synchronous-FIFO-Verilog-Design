@@ -33,9 +33,6 @@ Waveforms are dumped to VCD for viewing in EPWave or any standard waveform viewe
 
 ## Possible extensions
 
-- Move to a SystemVerilog testbench with a scoreboard and functional coverage instead of `$display`-based checking
-- Add assertions for the full/empty invariants (e.g., never asserting both `full` and `empty` simultaneously)
-- Parameterize and test with non-power-of-two depths, with the pointer logic corrected to handle that case
 - Wrap in a UVM environment as a lightweight companion to a larger UVM testbench project
 
 ## Running it
