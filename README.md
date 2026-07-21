@@ -23,6 +23,10 @@ The testbench is directed rather than constrained-random, structured around thre
 2. **Interleaved access**: a loop that writes and reads on alternating cycles across the full depth of the FIFO, exercising the pointers as they move through every address.
 3. **Full and drain**: writes one more time than the FIFO can hold (9 writes into an 8-deep FIFO), which should cause the final write to be dropped by the `!full` guard, then drains the FIFO completely with reads. This is the test that actually exercises the full-detection logic rather than just the happy path.
 
+
+<img width="937" height="164" alt="image" src="https://github.com/user-attachments/assets/f6bb2580-891c-4991-a952-771cfb5cfa49" />
+
+
 Waveforms are dumped to VCD for viewing in EPWave or any standard waveform viewer.
 
 ## What this demonstrates
